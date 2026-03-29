@@ -12,7 +12,7 @@ Safety guidelines:
 
 import time
 import traceback
-from facebook_scraper import get_posts
+from facebook_scraper import get_posts, set_noscript
 from facebook_scraper import exceptions
 
 GROUP_ID = 1466088316786306
@@ -28,6 +28,7 @@ def main():
     print(f"Scraping group {GROUP_ID} (pages={PAGES}, delay={DELAY_BETWEEN_POSTS}s) ...\n")
 
     try:
+        set_noscript(True)
         post_iter = get_posts(
             group=GROUP_ID,
             cookies=COOKIES_FILE,
