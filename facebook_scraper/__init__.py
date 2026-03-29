@@ -22,6 +22,34 @@ import re
 import os
 
 
+__all__ = [
+    'FacebookScraper',
+    'exceptions',
+    'Credentials',
+    'Post',
+    'RawPost',
+    'Profile',
+    'set_cookies',
+    'unset_cookies',
+    'set_proxy',
+    'set_user_agent',
+    'set_noscript',
+    'get_profile',
+    'get_reactors',
+    'get_friends',
+    'get_page_info',
+    'get_group_info',
+    'get_shop',
+    'get_posts',
+    'get_photos',
+    'get_posts_by_search',
+    'write_post_to_disk',
+    'write_posts_to_csv',
+    'get_groups_by_search',
+    'enable_logging',
+    'use_persistent_session',
+]
+
 _scraper = FacebookScraper()
 
 
