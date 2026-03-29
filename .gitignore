@@ -125,3 +125,8 @@ dmypy.json
 
 # VSCode
 .vscode
+
+# Facebook cookies - never commit these
+cookies.txt
+*.cookies.txt
+.fb-cookies.pckl
